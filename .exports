@@ -17,3 +17,6 @@ export LESS_TERMCAP_md="$ORANGE"
 
 # Don’t clear the screen after quitting a manual page
 export MANPAGER="less -X"
+
+# Set parallels as default vagrant provider
+export VAGRANT_DEFAULT_PROVIDER=parallels
