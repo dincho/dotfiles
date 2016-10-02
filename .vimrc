@@ -46,8 +46,11 @@ set number
 syntax on
 " Highlight current line
 set cursorline
-" Make tabs as wide as two spaces
-set tabstop=2
+" Make tabs as wide as four spaces
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
 " Show “invisible” characters
 set lcs=tab:▸\ ,trail:·,nbsp:_
 set list
