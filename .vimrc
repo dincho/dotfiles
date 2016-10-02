@@ -6,7 +6,14 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'sickill/vim-monokai'
+Plugin 'scrooloose/nerdtree'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'evidens/vim-twig'
+Plugin 'ervandew/supertab'
+
 call vundle#end()
 filetype plugin indent on
 
