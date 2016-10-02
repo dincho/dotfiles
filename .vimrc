@@ -2,7 +2,16 @@
 set background=dark
 colorscheme solarized
 let g:solarized_termtrans=1
+set nocompatible
+filetype off
 
+let g:vundle_default_git_proto = 'git'
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+call vundle#end()
+filetype plugin indent on
 " Make Vim more useful
 set nocompatible
 " Use the OS clipboard by default (on versions compiled with `+clipboard`)
