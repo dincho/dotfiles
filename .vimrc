@@ -1,7 +1,3 @@
-" Use the Solarized Dark theme
-set background=dark
-colorscheme solarized
-let g:solarized_termtrans=1
 set nocompatible
 filetype off
 
@@ -10,8 +6,13 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'sickill/vim-monokai'
 call vundle#end()
 filetype plugin indent on
+
+" Theme
+set background=dark
+colorscheme monokai
 " Make Vim more useful
 set nocompatible
 " Use the OS clipboard by default (on versions compiled with `+clipboard`)
