@@ -17,3 +17,10 @@ Thumbs.db
 *.sublime-project
 *.sublime-workspace
 .extra
+
+# Vim
+.vim/bundle
+
+# Ansible
+ansible/.vault-pass
+
