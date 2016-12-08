@@ -24,3 +24,5 @@ Thumbs.db
 # Ansible
 ansible/.vault-pass
 
+# Vagrant
+.vagrant
