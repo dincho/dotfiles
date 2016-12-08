@@ -1,4 +1,8 @@
 [alias]
+    co = checkout
+    ci = commit
+    st = status
+    br = branch
 
 	# View abbreviated SHA, description, and history graph of the latest 20 commits
 	l = log --pretty=oneline -n 20 --graph --abbrev-commit
@@ -75,6 +79,10 @@
 			git commit --amend -m \"$(git log -1 --pretty=%B)\n\nCloses #$1.\"; \
 		fi \
 	}; f"
+
+	nevermind = !git reset --hard HEAD && git clean -d -f
+
+	staged = diff --cached --diff-algorithm=minimal
 
 [apply]
 
@@ -162,7 +170,7 @@
 	# Use the Git 1.x.x default to avoid errors on machines with old Git
 	# installations. To use `simple` instead, add this to your `~/.extra` file:
 	# `git config --global push.default simple`. See http://git.io/mMah-w.
-	default = matching
+	default = simple
 	# Make `git push` push relevant annotated tags when pushing branches out.
 	followTags = true
 
